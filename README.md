@@ -1,4 +1,4 @@
-# Financial Time Series Analysis
+# Market Data Analyzer
 
 A personal Python project I built to apply what I learned in **Foundations of Data Analysis** and **Causal Inference in Time Series** at TU Munich to something more concrete than problem sets.
 
@@ -20,7 +20,33 @@ The quality check pipeline is the part I'm most happy with — it's structured t
 
 ---
 
-## Charts produced
+## Sample Output
+
+### Normalised Price Performance
+![Normalised Prices](images/01_normalised_prices.png)
+
+### Rolling 30-Day Volatility
+![Rolling Volatility](images/03_rolling_volatility.png)
+
+### Correlation Heatmap
+![Correlation](images/04_correlation_heatmap.png)
+
+### Drawdown Analysis
+![Drawdowns](images/05_drawdowns.png)
+
+---
+
+## Key Insights
+
+- **MSFT** had the best risk-adjusted performance with a Sharpe ratio of ~1.34 — highest return per unit of risk
+- **AMZN and JPM** had the worst max drawdowns (−60% and −50%) — significantly more volatile over this period
+- **Volatility clustering** is clearly visible in the rolling charts — calm periods followed by turbulent ones, especially the COVID crash in March 2020
+- **High correlations** (~0.7) between the tech stocks (AAPL, MSFT, GOOGL) suggest limited diversification benefit from holding all three
+- **Fat tails** confirmed across all tickers (kurtosis > 3) — normality assumptions would underestimate extreme loss probability
+
+---
+
+## Charts
 
 | # | Chart |
 |---|-------|
@@ -63,6 +89,7 @@ market-data-analyzer/
 ├── analysis.py          # time series analysis
 ├── visualiser.py        # charts
 │
+├── images/              # sample output charts
 ├── requirements.txt
 └── README.md
 ```
