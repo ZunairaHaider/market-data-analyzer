@@ -1,0 +1,15 @@
+# Data and outputs — don't commit these
+data/
+outputs/
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+*.egg-info/
