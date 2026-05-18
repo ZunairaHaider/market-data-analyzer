@@ -1,6 +1,6 @@
 # Financial Time Series Analysis
 
-A personal Python project I built to apply what I learned in **Foundations of Data Analysis** and **Causal Inference in Time Series** at TU Munich to something more concrete than problem sets.
+A Python project I built to apply what I learned in **Foundations of Data Analysis** and **Causal Inference in Time Series** at TU Munich to something more concrete than problem sets.
 
 The idea was to take real stock price data, check whether it's actually clean and reliable, and then do proper time series analysis on it. Turned out there's a lot more to "clean data" than I expected.
 
